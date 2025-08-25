@@ -1,0 +1,91 @@
+name: ok
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+# ------------------ PACKAGES ------------------
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Utility packages
+  http: ^1.1.0
+  intl: ^0.18.1
+  logger: ^2.0.1
+  url_launcher: ^6.1.12
+  smooth_page_indicator: ^1.2.1
+  iconsax: ^0.0.8
+
+  # Icons
+  iconsax_flutter: ^1.0.1
+  cupertino_icons: ^1.0.8
+
+  # State management
+  get: ^4.7.2
+  get_storage: ^2.1.1
+  flutter_native_splash: ^2.3.10
+
+# ---------------- DEV DEPENDENCIES ----------------
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  # ---------------- MATERIAL DESIGN ----------------
+  uses-material-design: true
+
+  # ---------------- LOCAL ASSETS ----------------
+  assets:
+    - assets/fonts/
+    - assets/icons/
+    - assets/images/
+    - assets/logos/
+    - assets/images/onboarding/
+    - assets/images/login/
+    - assets/images/banner/
+# ---------------- LOCAL FONTS ----------------
+fonts:
+  - family: Roboto
+    fonts:
+      - asset: assets/fonts/Roboto-Thin.ttf
+        weight: 100
+      - asset: assets/fonts/Roboto-Light.ttf
+        weight: 300
+      - asset: assets/fonts/Roboto-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/Roboto-Italic.ttf
+        style: italic
+      - asset: assets/fonts/Roboto-Medium.ttf
+        weight: 500
+      - asset: assets/fonts/Roboto-MediumItalic.ttf
+        weight: 500
+        style: italic
+      - asset: assets/fonts/Roboto-Bold.ttf
+        weight: 700
+      - asset: assets/fonts/Roboto-BoldItalic.ttf
+        weight: 700
+        style: italic
+      - asset: assets/fonts/Roboto-Black.ttf
+        weight: 900
+      - asset: assets/fonts/Roboto-BlackItalic.ttf
+        weight: 900
+        style: italic
+
+
+# ---------------- SPLASH SCREEN ----------------
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/logo/white.png
+  android: true
+  ios: true
+  web: false
+  fullscreen: true
+  android_12:
+    color: "#FFFFFF"
+    image: assets/images/logo/dark.png
+    web: false
