@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 
 import 'package:ok/features/authentication/controller/auth_controller.dart';
 
-import 'package:ok/features/authentication/screens/login/widgets/other_singnup_options.dart';
 
 import 'package:ok/features/authentication/screens/login/Success_screen/otp_input_field.dart';
 
@@ -32,20 +31,7 @@ class LoginScreen extends StatelessWidget {
 
           children: [
 
-            const SizedBox(height: OkSizes.spaceBtwSections),
-
-            // ******************** App Logo **********************
-
-            // Center(
-            //   child: Image(
-            //     width: OkHelperFunctions.screenWidth() * 0.6,
-            //     height: OkHelperFunctions.screenHeight() * 0.4,
-            //     image: const AssetImage(
-            //       'assets/images/login/hourglass.png',
-            //     ),
-            //   ),
-            // ),
-                      
+            const SizedBox(height: OkSizes.spaceBtwSections),        
 
             const SizedBox(height: OkSizes.spaceBtwSections),
 
@@ -56,13 +42,13 @@ class LoginScreen extends StatelessWidget {
                 'Enter your phone number',
                 style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                   fontFamily: 'Roboto', // Use Poppins fontR
-                  fontWeight: FontWeight.w800, // SemiBold (optional)
+                  fontWeight: FontWeight.w600, // SemiBold (optional)
                 ),
               ),
             ),
-            const SizedBox(height: OkSizes.sm),
 
-            /// Phone Input with +91
+            const SizedBox(height: OkSizes.spaceBtwItems),
+
             Row(
               children: [
                 Container(
@@ -102,7 +88,7 @@ class LoginScreen extends StatelessWidget {
             /// Other Option  for SignUp
             const SizedBox(height: OkSizes.spaceBtwSections),
 
-            OtherSignupOptions(dark: dark),
+            // OtherSignupOptions(dark: dark),
           ],
         ),
       ),
